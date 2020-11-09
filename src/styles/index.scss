@@ -1,13 +1,57 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body {
+    background: black;
+    color: white;
+}
+h1{
+    margin-left: 51rem;
+    margin-top: 7rem;
+    font-weight:bold;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic-lights {
+  padding: 10px 50px;
+  background: #222;
+  border-radius: 35px;
+  border: 15px solid #111;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  z-index:100;
+}
 
-*/
+.light {
+  border-radius: 50%;
+  background: gray;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.red {
+      border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
+    background-color: red;
+    &.selected{box-shadow: #f8ffcc 0px 0px 100px 20px}
+}
+.amber{
+      border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
+    background-color:orange;
+    &.selected{box-shadow: #f8ffcc 0px 0px 100px 20px}
+}
+.green{
+      border-radius: 50%;
+    width: 100px;
+  height: 100px;
+  margin: 20px auto;
+    background-color: green;
+    &.selected{box-shadow: #f8ffcc 0px 0px 100px 20px}
+}
